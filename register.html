@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="icon" href="img/kfc.ico">
+    <script src="js/register.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="key.html">Key People</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">More</a>
+            <div class="dropdown-content">
+                <a href="gallery.html">Gallery</a>
+                <a href="location.html">Location/Map</a>
+            </div>
+        </li>
+    </ul>
+    <div class="center">
+        <img src="img/logo.png" class="logo">
+    </div>
+    <form action="/action_page.php">
+        <div class="container">
+            <h1>Register</h1>
+            <p>Please fill in this form to create an account.</p>
+            <hr>
+            <label for="name"><b>Name</b></label>
+            <input type="text" placeholder="Enter Name" name="name" id="name" required>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" id="email" required onchange="validateEmail()">
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="psw" onchange="validatepassword()"
+                required>
+
+            <label for="psw-repeat"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat"
+                onchange="validaterepassword()" required>
+
+            <label for="date"><b>Date of Birth</b></label>
+            <input type="date" placeholder="Enter Date" name="date" id="date" required>
+            <hr>
+
+            <button type="submit" class="registerbtn" onclick="validate()">Register</button>
+            <script src="register.js" type="text/javascript"></script>
+        </div>
+    </form>
+    <div class="bot">
+        Contact us:<br>
+        Tel:<a href="tel:+60 123455">+60 123455</a>
+        <br>
+        Email:<a href="mailto:onghanlin48@gmail.com">onghanlin48@gmail.com</a>
+        <br>
+    </div>
+</body>
+
+</html>
